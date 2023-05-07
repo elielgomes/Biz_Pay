@@ -190,6 +190,7 @@
             this.ClientSize = new System.Drawing.Size(1795, 962);
             this.Controls.Add(this.containerMain);
             this.Controls.Add(this.mainPanel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Location = new System.Drawing.Point(50, 0);
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
