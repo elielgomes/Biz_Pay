@@ -116,7 +116,7 @@ namespace PIM
             this.toolStripMenuItem1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.toolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem1.Image")));
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(214, 26);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(176, 26);
             this.toolStripMenuItem1.Text = "Desativar";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
@@ -124,7 +124,7 @@ namespace PIM
             // 
             this.toolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem2.Image")));
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(214, 26);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(176, 26);
             this.toolStripMenuItem2.Text = "Editar";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
@@ -132,7 +132,7 @@ namespace PIM
             // 
             this.toolStripMenuItem3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem3.Image")));
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(214, 26);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(176, 26);
             this.toolStripMenuItem3.Text = "Gerar Holerite";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
@@ -160,7 +160,7 @@ namespace PIM
             this.selectFilterPermition.FormattingEnabled = true;
             this.selectFilterPermition.Items.AddRange(new object[] {
             "Todos",
-            "Administrador",
+            "Admin",
             "Usuário"});
             this.selectFilterPermition.Location = new System.Drawing.Point(631, 77);
             this.selectFilterPermition.Name = "selectFilterPermition";

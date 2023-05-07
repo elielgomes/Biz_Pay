@@ -152,12 +152,16 @@ namespace PIM
 
         private void inputPhone_TextChanged(object sender, EventArgs e)
         {
+            this.inputPhone.TextChanged -= new System.EventHandler(this.inputPhone_TextChanged);
             PIM.Utils.Masks.ApplyPhoneFormat(inputPhone);
+            this.inputPhone.TextChanged += new System.EventHandler(this.inputPhone_TextChanged);
         }
 
         private void inputCpf_TextChanged(object sender, EventArgs e)
         {
+            this.inputCpf.TextChanged -= new System.EventHandler(this.inputCpf_TextChanged);
             PIM.Utils.Masks.ApplyCPFformat(inputCpf);
+            this.inputCpf.TextChanged += new System.EventHandler(this.inputCpf_TextChanged);
         }
 
 
