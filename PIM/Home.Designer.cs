@@ -194,7 +194,7 @@
             this.Location = new System.Drawing.Point(50, 0);
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Home";
+            this.Text = "Biz Pay";
             this.Load += new System.EventHandler(this.Home_Load);
             this.mainPanel.ResumeLayout(false);
             this.brandPanel.ResumeLayout(false);
