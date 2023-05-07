@@ -12,7 +12,7 @@ using MySql.Data.MySqlClient;
 using Org.BouncyCastle.Asn1.X500;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using PIM.Database;
-
+using System.Diagnostics;
 
 namespace PIM
 {
@@ -22,6 +22,7 @@ namespace PIM
         public Login()
         {
             InitializeComponent();
+            Utils.ContextLogin.Login = this;
         }
 
 
@@ -183,6 +184,7 @@ namespace PIM
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Login_FormClosing);
             this.Load += new System.EventHandler(this.Login_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -253,21 +255,21 @@ namespace PIM
 
                            PIM.Database.ContextHome._Home = new PIM.Home();
 
-                            this.Hide();
+                            Utils.ContextLogin.Login.Hide();
                             ContextHome._Home.Show();
                         
                         } else
                         {
-                            MessageBox.Show("Senha incorreta!");
+                            MessageBox.Show("Senha incorreta!","Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         }
                     } else
                     {
-                        MessageBox.Show("Usuário Inativo!");
+                        MessageBox.Show("Usuário Inativo!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     }
 
                 } else
                 {
-                    MessageBox.Show("Usuário não encontrado!");
+                    MessageBox.Show("Usuário não encontrado!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
                 }
 
@@ -323,5 +325,14 @@ namespace PIM
             checkLogin();
         }
 
+        private void Login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            string programName = Process.GetCurrentProcess().ProcessName;
+
+            foreach (Process process in Process.GetProcessesByName(programName))
+            {
+                process.Kill();
+            }
+        }
     }
 }

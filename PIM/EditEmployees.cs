@@ -179,14 +179,14 @@ namespace PIM
                 }
                 else
                 {
-                    MessageBox.Show("As senhas devem ser iguais para confirmação!");
+                    MessageBox.Show("As senhas devem ser iguais para confirmação!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     return false;
                 }
 
             }
             else
             {
-                MessageBox.Show("A senha deve conter no minimo 8 caracteres!");
+                MessageBox.Show("A senha deve conter no minimo 8 caracteres!","Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return false;
             }
         }

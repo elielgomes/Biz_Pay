@@ -93,8 +93,7 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Database\Connection.cs" />
-    <Compile Include="Database\ContextHome.cs" />
-    <Compile Include="Database\Employees.cs" />
+    <Compile Include="Utils\ContextHome.cs" />
     <Compile Include="EditEmployees.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +143,7 @@
     </Compile>
     <Compile Include="Database\User.cs" />
     <Compile Include="Utils\Capitalize.cs" />
+    <Compile Include="Utils\ContextLogin.cs" />
     <Compile Include="Utils\Masks.cs" />
     <Compile Include="Utils\ValidateInput.cs" />
     <EmbeddedResource Include="CustomCoponents\RoudedButton.resx">

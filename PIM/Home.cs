@@ -80,9 +80,7 @@ namespace PIM
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            Login _login = new Login();
-            _login.Show();
-
+            Utils.ContextLogin.Login.Show();
             this.Close();
         }
 

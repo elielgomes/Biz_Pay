@@ -44,10 +44,12 @@ namespace PIM
             this.selectFilterPermition = new System.Windows.Forms.ComboBox();
             this.selectFilterStatus = new System.Windows.Forms.ComboBox();
             this.selectFilterRole = new System.Windows.Forms.ComboBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnFilter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClearFilter)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -91,40 +93,46 @@ namespace PIM
             this.tableEmployees.HideSelection = false;
             this.tableEmployees.Location = new System.Drawing.Point(96, 230);
             this.tableEmployees.Name = "tableEmployees";
-            this.tableEmployees.Size = new System.Drawing.Size(906, 446);
+            this.tableEmployees.Size = new System.Drawing.Size(906, 420);
             this.tableEmployees.TabIndex = 3;
             this.tableEmployees.UseCompatibleStateImageBehavior = false;
             this.tableEmployees.SelectedIndexChanged += new System.EventHandler(this.tableEmployees_SelectedIndexChanged);
             // 
             // contextMenuStrip1
             // 
+            this.contextMenuStrip1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.contextMenuStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1,
             this.toolStripMenuItem2,
             this.toolStripMenuItem3});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(173, 76);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(177, 82);
             this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
             // toolStripMenuItem1
             // 
+            this.toolStripMenuItem1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.toolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem1.Image")));
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(172, 24);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(214, 26);
             this.toolStripMenuItem1.Text = "Desativar";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // toolStripMenuItem2
             // 
+            this.toolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem2.Image")));
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(172, 24);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(214, 26);
             this.toolStripMenuItem2.Text = "Editar";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // toolStripMenuItem3
             // 
+            this.toolStripMenuItem3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem3.Image")));
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(172, 24);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(214, 26);
             this.toolStripMenuItem3.Text = "Gerar Holerite";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
@@ -193,11 +201,23 @@ namespace PIM
             this.selectFilterRole.Size = new System.Drawing.Size(153, 32);
             this.selectFilterRole.TabIndex = 36;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(48)))), ((int)(((byte)(218)))));
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(966, 665);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(36, 41);
+            this.pictureBox2.TabIndex = 37;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // Employees
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1348, 934);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.selectFilterRole);
             this.Controls.Add(this.selectFilterStatus);
             this.Controls.Add(this.selectFilterPermition);
@@ -215,6 +235,7 @@ namespace PIM
             ((System.ComponentModel.ISupportInitialize)(this.btnFilter)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClearFilter)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -234,5 +255,6 @@ namespace PIM
         private ToolStripMenuItem toolStripMenuItem1;
         private ToolStripMenuItem toolStripMenuItem2;
         private ToolStripMenuItem toolStripMenuItem3;
+        private PictureBox pictureBox2;
     }
 }

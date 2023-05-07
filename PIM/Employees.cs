@@ -256,5 +256,10 @@ namespace PIM
         {
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Clique com o botão direito do mouse sobre o funcionário e selecione a operação desejada!", "Ajuda?", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

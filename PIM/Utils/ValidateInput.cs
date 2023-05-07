@@ -17,7 +17,7 @@ namespace PIM.Utils
 
             if (!regex.IsMatch(email))
             {
-                MessageBox.Show("Endereço de e-mail inválido!");
+                MessageBox.Show("Endereço de e-mail inválido!","Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
                 return false;
             }
@@ -33,7 +33,7 @@ namespace PIM.Utils
 
             if (!regex.IsMatch(phone))
             {
-                MessageBox.Show("Número de telefone inválido!");
+                MessageBox.Show("Número de telefone inválido!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return false;
             }
 
@@ -48,7 +48,7 @@ namespace PIM.Utils
 
             if (!regex.IsMatch(name))
             {
-                MessageBox.Show("Nome inválido!");
+                MessageBox.Show("Nome inválido!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return false;
             }
 
@@ -63,7 +63,7 @@ namespace PIM.Utils
 
             if (!regex.IsMatch(cpf))
             {
-                MessageBox.Show("CPF inválido!");
+                MessageBox.Show("CPF inválido!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return false;
             }
 
@@ -74,7 +74,7 @@ namespace PIM.Utils
         {
             if (comboBox.SelectedItem == null)
             {
-                MessageBox.Show($"Selecione um valor para o campo {fieldName}");
+                MessageBox.Show($"Selecione um valor para o campo {fieldName}", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return false;
             }
 
