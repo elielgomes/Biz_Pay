@@ -79,8 +79,16 @@ namespace PIM
             }
             catch (MySqlException ex)
             {
-                MessageBox.Show("Erro " + ex.Number + " ocorreu: " + ex.Message,
-                                "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (ex.Number == 1062)
+                {
+                    MessageBox.Show("Este CPF já está vinculado a um usuário!",
+                               "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MessageBox.Show("Erro " + ex.Number + " ocorreu: " + ex.Message,
+                                    "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             catch (Exception ex)
             {
