@@ -205,7 +205,6 @@ namespace PIM
 
         private void tableEmployees_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //1
             ListView.SelectedListViewItemCollection selectedItems = tableEmployees.SelectedItems;
 
             foreach (ListViewItem item in selectedItems)
@@ -217,7 +216,6 @@ namespace PIM
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            // 3
             updateStatus();
             getAllEmployees();
             clearFilters();
@@ -225,7 +223,7 @@ namespace PIM
 
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            ContextHome._Home.FormShow(new EditEmployees(selectedEmployeeID));
+            PIM.Utils.ContextHome._Home.FormShow(new EditEmployees(selectedEmployeeID));
         }
 
         private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
@@ -244,7 +242,7 @@ namespace PIM
 
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
         {
-            ContextHome._Home.FormShow(new Paycheck(selectedEmployeeID));
+            PIM.Utils.ContextHome._Home.FormShow(new Paycheck(selectedEmployeeID));
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

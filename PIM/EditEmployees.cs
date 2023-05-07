@@ -164,7 +164,7 @@ namespace PIM
             if (validateAllFields())
             {
                 updateEmployee();
-                ContextHome._Home.FormShow(new Employees());
+                PIM.Utils.ContextHome._Home.FormShow(new Employees());
             }
         }
 
@@ -238,7 +238,7 @@ namespace PIM
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            ContextHome._Home.FormShow(new Employees());
+            PIM.Utils.ContextHome._Home.FormShow(new Employees());
         }
     }
 }

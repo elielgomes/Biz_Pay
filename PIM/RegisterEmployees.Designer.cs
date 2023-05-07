@@ -60,7 +60,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(1032, 732);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btnCadastrar
             // 
@@ -84,7 +83,6 @@
             this.inputName.Name = "inputName";
             this.inputName.Size = new System.Drawing.Size(378, 27);
             this.inputName.TabIndex = 25;
-            this.inputName.TextChanged += new System.EventHandler(this.inputName_TextChanged);
             // 
             // inputPhone
             // 
@@ -122,7 +120,6 @@
             this.inputEmail.Name = "inputEmail";
             this.inputEmail.Size = new System.Drawing.Size(378, 27);
             this.inputEmail.TabIndex = 28;
-            this.inputEmail.TextChanged += new System.EventHandler(this.inputEmail_TextChanged);
             // 
             // inputPass
             // 
@@ -134,7 +131,6 @@
             this.inputPass.Name = "inputPass";
             this.inputPass.Size = new System.Drawing.Size(327, 27);
             this.inputPass.TabIndex = 29;
-            this.inputPass.TextChanged += new System.EventHandler(this.inputPass_TextChanged);
             this.inputPass.Enter += new System.EventHandler(this.inputPass_Enter);
             this.inputPass.Leave += new System.EventHandler(this.inputPass_Leave);
             // 
@@ -148,7 +144,6 @@
             this.inputConfirmPass.Name = "inputConfirmPass";
             this.inputConfirmPass.Size = new System.Drawing.Size(327, 27);
             this.inputConfirmPass.TabIndex = 30;
-            this.inputConfirmPass.TextChanged += new System.EventHandler(this.inputConfirmPass_TextChanged);
             // 
             // selectPermition
             // 
@@ -164,7 +159,6 @@
             this.selectPermition.Name = "selectPermition";
             this.selectPermition.Size = new System.Drawing.Size(148, 32);
             this.selectPermition.TabIndex = 35;
-            this.selectPermition.SelectedIndexChanged += new System.EventHandler(this.selectPermition_SelectedIndexChanged);
             // 
             // selectRole
             // 
@@ -181,7 +175,6 @@
             this.selectRole.Name = "selectRole";
             this.selectRole.Size = new System.Drawing.Size(148, 32);
             this.selectRole.TabIndex = 37;
-            this.selectRole.SelectedIndexChanged += new System.EventHandler(this.selectRole_SelectedIndexChanged);
             // 
             // eyeLockConfirm
             // 

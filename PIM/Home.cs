@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -80,13 +81,21 @@ namespace PIM
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            Utils.ContextLogin.Login.Show();
-            this.Close();
+            PIM.Utils.ContextLogin.Login.Show();
+            PIM.Utils.ContextHome._Home.Hide();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void Home_FormClosing(object sender, FormClosingEventArgs e)
         {
+            if (Utils.ContextLogin.Login != null)
+            {
+                string programName = Process.GetCurrentProcess().ProcessName;
 
+                foreach (Process process in Process.GetProcessesByName(programName))
+                {
+                    process.Kill();
+                }
+            }
         }
     }
 }

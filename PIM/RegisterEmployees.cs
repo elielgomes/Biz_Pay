@@ -176,11 +176,8 @@ namespace PIM
             {
                 return true;
             }
-
             return false;
-
         }
-
         private void inputPass_Enter(object sender, EventArgs e)
         {
             System.Windows.Forms.ToolTip tooltipPass = new System.Windows.Forms.ToolTip();
@@ -193,41 +190,6 @@ namespace PIM
         {
             System.Windows.Forms.ToolTip tooltipPass = new System.Windows.Forms.ToolTip();
             tooltipPass.Hide(inputPass);
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void inputName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void inputEmail_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void inputPass_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void inputConfirmPass_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void selectPermition_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void selectRole_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

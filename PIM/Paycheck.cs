@@ -241,14 +241,14 @@ namespace PIM
                 string sql = "INSERT INTO holerite (idFuncionario, salarioLiquido, salarioBruto, descontoInss, descontoFaltas, horasExtras, faltas, descontoIRRF) VALUES (@idFuncionario, @salarioLiquido, @salarioBruto, @descontoInss, @descontoFaltas, @horasExtras, @faltas, @descontoIRRF);";
                 MySqlCommand command = new MySqlCommand(sql, connection);
 
-                command.Parameters.Add("@idFuncionario", MySqlDbType.Int32).Value = employeeID; // substitua 1 pelo ID do funcionário
-                command.Parameters.Add("@horasExtras", MySqlDbType.Decimal).Value = overtime; // substitua 10.5 pelo número de horas extras
-                command.Parameters.Add("@salarioLiquido", MySqlDbType.Decimal).Value = netSalary; // substitua 2000.00 pelo salário líquido
-                command.Parameters.Add("@salarioBruto", MySqlDbType.Decimal).Value = grossSalary; // substitua 2500.00 pelo salário bruto
-                command.Parameters.Add("@descontoInss", MySqlDbType.Decimal).Value = discountINSS; // substitua 300.00 pelo desconto do INSS
-                command.Parameters.Add("@descontoFaltas", MySqlDbType.Decimal).Value = discountAbsences; // substitua 0 pelo valor dos descontos de faltas
-                command.Parameters.Add("@faltas", MySqlDbType.Int32).Value = absences; // substitua 0 pelo número de faltas
-                command.Parameters.Add("@descontoIRRF", MySqlDbType.Int32).Value = discountIRRF; // substitua 0 pelo número de faltas
+                command.Parameters.Add("@idFuncionario", MySqlDbType.Int32).Value = employeeID;
+                command.Parameters.Add("@horasExtras", MySqlDbType.Decimal).Value = overtime;
+                command.Parameters.Add("@salarioLiquido", MySqlDbType.Decimal).Value = netSalary;
+                command.Parameters.Add("@salarioBruto", MySqlDbType.Decimal).Value = grossSalary;
+                command.Parameters.Add("@descontoInss", MySqlDbType.Decimal).Value = discountINSS;
+                command.Parameters.Add("@descontoFaltas", MySqlDbType.Decimal).Value = discountAbsences;
+                command.Parameters.Add("@faltas", MySqlDbType.Int32).Value = absences;
+                command.Parameters.Add("@descontoIRRF", MySqlDbType.Int32).Value = discountIRRF;
 
 
                     int rowsAffected = command.ExecuteNonQuery();

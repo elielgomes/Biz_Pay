@@ -253,10 +253,10 @@ namespace PIM
                             PIM.Database.User.NameRole = nameRole;
                             PIM.Database.User.Permition = permition;
 
-                           PIM.Database.ContextHome._Home = new PIM.Home();
+                           PIM.Utils.ContextHome._Home = new PIM.Home();
 
                             Utils.ContextLogin.Login.Hide();
-                            ContextHome._Home.Show();
+                            PIM.Utils.ContextHome._Home.Show();
                         
                         } else
                         {
